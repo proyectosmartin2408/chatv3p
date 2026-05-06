@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio - EcoEnergía{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>⚡ Energía del Futuro</h1>
+    <p>Transformamos el mundo con energías limpias, sostenibles y accesibles.</p>
+    <a href="/energia" class="btn">Explorar Energías</a>
+  </div>
+
+  <div class="hero-img">
+    <img src="{{ url_for('static', filename='img/energia.jpeg') }}">
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section class="cards">
+  <h2>🌱 Tipos de Energía</h2>
+
+  <div class="card-container">
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='img/solar.jpeg') }}">
+      <h3>Solar</h3>
+      <p>Captura la energía del sol para generar electricidad limpia.</p>
+    </div>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='img/eolica.jpeg') }}">
+      <h3>Eólica</h3>
+      <p>Aprovecha la fuerza del viento mediante aerogeneradores.</p>
+    </div>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='img/hidraulica.jpeg') }}">
+      <h3>Hidráulica</h3>
+      <p>Utiliza el agua para producir energía sostenible.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- BENEFICIOS -->
+<section class="benefits">
+  <h2>🚀 Beneficios</h2>
+
+  <div class="card-container">
+    <div class="card">
+      <h3>🌍 Ecológico</h3>
+      <p>Reduce la contaminación y protege el planeta.</p>
+    </div>
+
+    <div class="card">
+      <h3>💰 Económico</h3>
+      <p>Ahorro a largo plazo en consumo energético.</p>
+    </div>
+
+    <div class="card">
+      <h3>♻️ Sostenible</h3>
+      <p>Recursos naturales inagotables.</p>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
+ 

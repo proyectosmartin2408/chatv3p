@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio - EcoEnergía{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Revisión </h1>
+    <p>Transformamos el mundo con energías limpias, sostenibles y accesibles.</p>
+  </div>
+
+  <div class="hero-img">
+    <img src="{{ url_for('static', filename='img/mapamundi.jpg') }}">
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section class="cards">
+  <h2>Continentes</h2>
+
+  <div class="card-container">
+    <a class="enlace" href="/america">
+      <div class="card">
+        <img src="{{ url_for('static', filename='img/america.jpg') }}">
+        <h3>América</h3>
+        <p>
+          El continente americano está compuesto por 35 países soberanos, los cuales suelen agruparse en cuatro regiones
+          geográficas principales: América del Norte, América Central, las Antillas (o el Caribe) y América del Sur
+        </p>
+      </div>
+    </a>
+    <a class="enlace" href="/europa">
+      <div class="card">
+        <img src="{{ url_for('static', filename='img/europa.jpg') }}">
+        <h3>Europa</h3>
+        <p>
+          Europa es un continente diverso y compacto con unos 50 países, caracterizado por su inmensa riqueza histórica,
+          cultural y paisajística, que abarca desde los climas nórdicos hasta el Mediterráneo. Es una mezcla de ciudades
+          modernas, historia antigua (Grecia/Roma), alta gastronomía y economías desarrolladas, con gran conectividad
+          entre naciones.
+        </p>
+
+      </div>
+    </a>
+
+    <a class="enlace" href="/asia">
+      <div class="card">
+        <img src="{{ url_for('static', filename='img/asia.jpg') }}">
+        <h3>Asia</h3>
+        <p>
+          Asia es el continente más extenso y poblado del mundo. Ocupa aproximadamente una tercera parte de la
+          superficie terrestre de la Tierra y alberga a casi el 60% de la población mundial, destacando como un
+          territorio de contrastes geográficos, climas extremos y una profunda diversidad cultural.
+        </p>
+      </div>
+    </a>
+
+    <a class="enlace" href="/africa">
+      <div class="card">
+        <img src="{{ url_for('static', filename='img/africa.jpg') }}">
+        <h3>África</h3>
+        <p>
+          África es el segundo continente más grande y poblado del mundo (54 países, >1.400 millones de personas), cuna
+          de la humanidad y con inmensa diversidad étnica (3.000+ grupos) y lingüística. Se caracteriza por el desierto
+          del Sahara, la cuenca del Congo, el río Nilo y grandes sabanas. Alberga una gran riqueza mineral, aunque
+          enfrenta retos de desarrollo.
+        </p>
+      </div>
+    </a>
+
+    <a class="enlace" href="/oceania">
+      <div class="card">
+        <img src="{{ url_for('static', filename='img/oceania.jpg') }}">
+        <h3>Oceanía</h3>
+        <p>
+          Oceanía es el continente más pequeño del mundo, con una extensión de aproximadamente 8,5 millones de km² y una
+          población cercana a los 45 millones de habitantes. Está compuesto por 14 países independientes (siendo
+          Australia el más extenso y poblado) y diversos territorios dependientes, distribuidos en cuatro grandes
+          regiones: Australasia, Melanesia, Micronesia y Polinesia. Su geografía se caracteriza por ser
+          predominantemente insular y marítima, con una densidad de población muy baja y una biodiversidad única en el
+          planeta.
+        </p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+
+{% endblock %}
