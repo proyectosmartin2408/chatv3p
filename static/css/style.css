@@ -32,6 +32,7 @@
   .home {
     width: 90%;
     padding: 40px;
+    justify-content: center;
   }
 
   .continente {
@@ -173,33 +174,64 @@
 
 
   /* HERO */
-  .hero {
-    position: relative;
-    display: flex;
+
+  .seccionTitulo {
+    justify-content: center;
     align-items: center;
+    margin: 0%;
+    margin-top: 80px;
+    text-align: center;
+  }
+
+  .areaTitulo {
+    width: 100%;
+    display: block;
     justify-content: space-between;
-    height: auto;
     margin-top: 100px;
+    margin: 0%;
   }
 
-  .hero-text {
-    max-width: 500px;
+  .textoTitulo {
+    font-size: 40px;
+    color: #001a41;
+    font-weight: bold;
+    margin: 0%;
   }
 
-  .hero h1 {
-    font-size: 3rem;
-    color: #198754;
+  .textoSubtitulo {
+    font-size: 25px;
+    color: blue;
+    margin: 0%;
+    font-weight: bold;
+    padding: 20px 0px;
   }
 
-  .hero p {
-    margin: 20px 0;
-    font-size: 1.2rem;
+  .seccionInicio {
+    display: block;
+    width: 100%;
   }
 
-  .hero-img img {
-    width: 400px;
-    animation: float 3s ease-in-out infinite;
+  .parrafoInicio {
+    text-align: justify;
   }
+
+  .areaGraficos {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .graficoMapa {
+    width: 600px;
+    height: 600px;
+  }
+
+  .graficoRankin {
+
+    width: 500px;
+    height: 600px;
+  }
+
 
   /* BOTÓN */
   .btn {
@@ -274,8 +306,6 @@
     width: 30%;
     background-color: #c7c7c7;
     justify-items: center;
-
-
   }
 
   .tituloEnergia {
@@ -286,10 +316,7 @@
     height: 40px;
   }
 
-  .parrafoEnergia {
-    padding: 10px 20px;
-    text-align: justify;
-  }
+
 
   /* ANIMACIÓN */
   @keyframes float {
