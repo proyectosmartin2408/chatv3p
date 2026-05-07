@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{% block title %}EcoEnergía{% endblock %}</title>
+  <title>{% block title %}Transformación Energética{% endblock %}</title>
 
   <link rel="icon" href="{{ url_for('static', filename='img/favicon.png') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styleconsolidado.css') }}">
 </head>
 
 <body>
 
   <!-- NAVBAR -->
   <nav class="navbar">
-    <h3>🗺️ Los Países Frente a las Energías Renovables</h3>
+    <h3 class="tituloMenu">🗺️ Los Países y su Transición Energética</h3>
     <ul>
       <li><a href="/">Inicio</a></li>
       <li><a href="/america">América</a></li>
       <li><a href="/europa">Europa</a></li>
       <li><a href="/asia">Asia</a></li>
-      <li><a href="/africa">Africa</a></li>
+      <li><a href="/africa">África</a></li>
       <li><a href="/oceania">Oceanía</a></li>
     </ul>
   </nav>
@@ -34,7 +34,7 @@
   <!-- CHAT -->
   <div id="chat-wrapper" class="chat-wrapper">
     <div class="chat-header">
-      <span>🤖 Países y Capitales</span>
+      <span>🌎🌏🌍 Información Países</span>
       <button id="chat-close">✖</button>
     </div>
 
@@ -44,7 +44,7 @@
         <input
           type="text"
           id="userInput"
-          placeholder="Escribe tu mensaje..."
+          placeholder="País del que se quiere consultar información"
           autocomplete="off"
         />
       </form>
