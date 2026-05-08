@@ -4,12 +4,16 @@
 
   .user {
     text-align: right;
-    color: rgb(0, 0, 24);
+    color: #000018;
+    background-color: #d3d2dd;
+    font-weight: bold;
   }
 
   .bot {
     text-align: left;
     color: green;
+    background-color: #d0e7db;
+    font-size: 14px ;
   }
 
   input[type="text"] {
@@ -74,10 +78,12 @@
 
   /* TU CHAT */
   #chatbox {
+    width: 90%;
     display: flex;
     flex-direction: column;
     height: 100%;
     padding: 15px;
+    justify-content: center;
   }
 
 

@@ -7,7 +7,7 @@ const form = document.getElementById("chatForm");
       const text = input.value.trim();
       if (!text) return;
 
-      messages.innerHTML += `<div class="msg user">Tú: ${text}</div>`;
+      messages.innerHTML += `<div class="msg user"><span>Tú: </span> ${text}</div>`;
       input.value = "";
 
       const response = await fetch("/chat", {
@@ -17,6 +17,6 @@ const form = document.getElementById("chatForm");
       });
 
       const data = await response.json();
-      messages.innerHTML += `<div class="msg bot">Bot: ${data.response}</div>`;
+      messages.innerHTML += `<div class="msg bot"><span> Bot: </span> ${data.response}</div>`;
       messages.scrollTop = messages.scrollHeight;
     });
