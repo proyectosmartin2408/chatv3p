@@ -87,9 +87,8 @@
    border-radius: 15px;
    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
    transition: transform 0.3s;
-   display: block;
-   justify-items: center;
-   background-color: #f1f1f1;
+   align-items: center;
+   background-color: #ffffff;
 }
 
 .tituloContinente {
@@ -116,4 +115,5 @@
 .enlace {
    text-decoration: none;
    color: #001a41;
+
 }
