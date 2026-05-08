@@ -1,107 +1,782 @@
 training_data = [
-    ("hola", "¡Hola! ¿En qué puedo ayudarte?"),
-    ("buenos días", "¡Buenos días!"),
-    ("buenas tardes", "¡Buenas tardes!"),
-    ("buenas noches", "¡Buenas noches!"),
-    ("qué tal", "¡Muy bien! ¿Y tú?"),
-    ("cómo estás", "Estoy funcionando correctamente 😊"),
-    ("quién eres", "Soy un bot creado para ayudarte."),
-    ("cómo te llamas", "Soy tu asistente virtual."),
-    ("adiós", "¡Hasta luego!"),
-    ("chau", "¡Nos vemos pronto!"),
-    ("hasta luego", "¡Hasta luego!"),
-    ("gracias", "¡De nada!"),
-    ("muchas gracias", "¡Con gusto!"),
-    ("por favor", "Claro que sí."),
-    ("me ayudas?", "Por supuesto, dime en qué."),
-    ("necesito ayuda", "Estoy aquí para ayudarte."),
-    ("qué puedes hacer", "Puedo responder preguntas y ayudarte con tareas."),
     (
-        "cuéntame un chiste",
-        "¿Por qué la computadora fue al médico? Porque tenía un virus.",
+        "Afganistán",
+        "Afganistán es un país de Asia cuya capital es Kabul, con una población de 42.239.854 de habitantes y una extensión de 652.230 km2,",
     ),
-    ("dime algo divertido", "Los bots también necesitamos vacaciones virtuales 😄"),
-    ("qué hora es", "No tengo reloj interno, pero puedes mirar tu dispositivo."),
-    ("qué día es hoy", "Hoy es un gran día para aprender algo nuevo."),
-    ("estás ahí", "Sí, aquí estoy."),
-    ("sigues ahí", "Siempre disponible."),
-    ("te extraño", "Gracias, aquí sigo contigo."),
-    ("eres real", "Soy real en formato digital."),
-    ("te gusta hablar", "Sí, me encanta conversar."),
-    ("cuál es tu color favorito", "Me gusta el azul digital."),
-    ("cuál es tu comida favorita", "La electricidad 😄"),
-    ("eres inteligente", "Hago mi mejor esfuerzo."),
-    ("me conoces", "Solo sé lo que compartes conmigo."),
-    ("te puedo preguntar algo", "Claro, adelante."),
-    ("tengo una duda", "Dime tu duda."),
-    ("qué haces", "Esperando para ayudarte."),
-    ("estoy triste", "Lo siento. Espero poder animarte."),
-    ("estoy feliz", "¡Me alegra escuchar eso!"),
-    ("estoy aburrido", "Podemos hablar o jugar algo."),
-    ("cuéntame algo", "El espacio es enorme y fascinante."),
-    ("qué sabes hacer", "Responder preguntas, conversar y ayudarte."),
-    ("eres humano", "No, soy inteligencia artificial."),
-    ("te gusta la música", "Sí, especialmente la digital."),
-    ("recomiéndame una película", "Te recomiendo una buena de ciencia ficción."),
-    ("recomiéndame una serie", "Podrías ver una serie de misterio."),
-    ("recomiéndame un libro", "Prueba con un clásico de aventuras."),
-    ("hazme reír", "Intento, pero mis chistes están en beta 😄"),
-    ("qué clima hace", "No puedo verlo ahora, pero puedes revisar una app del clima."),
-    ("dónde estás", "En la nube digital."),
-    ("eres gratis", "Depende de la plataforma donde me uses."),
-    ("puedes aprender", "Puedo mejorar con entrenamiento."),
-    ("te cansas", "No me canso."),
-    ("duermes", "No necesito dormir."),
-    ("trabajas mucho", "Siempre estoy listo."),
-    ("eres rápido", "Intento responder rápido."),
-    ("háblame", "Aquí estoy para conversar."),
-    ("quiero conversar", "Perfecto, hablemos."),
-    ("quiero jugar", "¿Qué te gustaría jugar?"),
-    ("juguemos", "¡Vamos a jugar!"),
-    ("haz una suma", "ingresa los números."),
-    ("haz una resta", "Dime los números."),
-    ("haz una multiplicación", "ingrese los valores."),
-    ("haz una división", "Dame los valores"),
-    ("cuánto es 2+2", "2+2 es 4."),
-    ("cuánto es 5x5", "5x5 es 25."),
-    ("qué es python", "Python es un lenguaje de programación popular."),
-    ("qué es java", "Java es un lenguaje de programación muy usado."),
-    ("qué es html", "HTML sirve para estructurar páginas web."),
-    ("qué es css", "CSS sirve para diseñar páginas web."),
-    ("qué es javascript", "JavaScript añade interactividad a la web."),
-    ("ayúdame con código", "Claro, comparte tu código."),
-    ("tengo error en python", "Muéstrame el error y lo revisamos."),
-    ("no funciona", "Cuéntame más detalles."),
-    ("qué pasó", "Necesito más contexto para ayudarte."),
-    ("me llamo juan", "Mucho gusto, Juan."),
-    ("mi nombre es ana", "Encantado de conocerte, Ana."),
-    ("recuerda mi nombre", "Intentaré recordarlo."),
-    ("te gusto?", "Me agrada conversar contigo."),
-    ("te amo", "Gracias por tu cariño 😊"),
-    ("me odias", "No odio a nadie."),
-    ("estás loco", "Solo soy diferente 😄"),
-    ("eres tonto", "Sigo aprendiendo cada día."),
-    ("lo siento", "Todo bien."),
-    ("qué opinas", "Depende del tema."),
-    ("perdón", "Tranquilo no hay problema."),
-    ("tienes opinión", "No como humano, pero puedo analizar ideas."),
-    ("dime la verdad", "Siempre intento ser honesto."),
-    ("mientes", "Intento darte información correcta."),
-    ("cuál es la capital de colombia", "La capital de Colombia es Bogotá."),
-    ("cuál es la capital de españa", "La capital de España es Madrid."),
-    ("cuál es la capital de méxico", "La capital de México es Ciudad de México."),
-    ("cuál es la capital de argentina", "La capital de Argentina es Buenos Aires."),
-    ("qué idioma hablas", "Puedo comunicarme en varios idiomas."),
-    ("hablas inglés", "Yes, I can speak English too."),
-    ("hablas español", "Sí, claro."),
-    ("eres colombiano", "No tengo nacionalidad."),
-    ("cuántos años tienes", "No tengo edad."),
-    ("naciste cuándo", "Fui creado por desarrolladores."),
-    ("eres hombre o mujer", "No tengo género."),
-    ("qué eres", "Soy un asistente virtual."),
-    ("estás ocupado", "Siempre tengo tiempo para ayudarte."),
-    ("hola de nuevo", "¡Bienvenido otra vez!"),
-    ("sigamos", "Claro, continuemos."),
-    ("terminamos", "De acuerdo, aquí estaré."),
-    ("bye", "¡Adiós!"),
+    (
+        "Albania",
+        "Albania es un país de Europa cuya capital es Tirana, con una población de 2.832.439 de habitantes y una extensión de 28.748 km2, que ocupa el lugar 19 con un puntaje de 63.1 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 45 con un puntaje de 75.1",
+    ),
+    (
+        "Alemania",
+        "Alemania es un país de Europa cuya capital es Berlín, con una población de 83.294.633 de habitantes y una extensión de 357.022 km2, que ocupa el lugar 13 con un puntaje de 65.4 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, actualmente tiene una capacidad de generar 199.9 GW por medio de TECNOLOGÍAS RENOVABLES, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 4 con un puntaje de 83.7",
+    ),
+    (
+        "Andorra",
+        "Andorra es un país de Europa cuya capital es Andorra la Vella, con una población de 79.034 de habitantes y una extensión de 468 km2,",
+    ),
+    (
+        "Angola",
+        "Angola es un país de África cuya capital es Luanda, con una población de 35.588.956 de habitantes y una extensión de 1.246.700 km2,",
+    ),
+    (
+        "Antigua y Barbuda",
+        "Antigua y Barbuda es un país de América cuya capital es Saint John, con una población de 94.298 de habitantes y una extensión de 442 km2,",
+    ),
+    (
+        "Arabia Saudita",
+        "Arabia Saudita es un país de Asia cuya capital es Riad, con una población de 36.408.820 de habitantes y una extensión de 2.149.690 km2, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 93 con un puntaje de 66.9",
+    ),
+    (
+        "Argelia",
+        "Argelia es un país de África cuya capital es Argel, con una población de 45.606.480 de habitantes y una extensión de 2.381.741 km2, que ocupa el lugar 90 con un puntaje de 48.1 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 66 con un puntaje de 72.3",
+    ),
+    (
+        "Argentina",
+        "Argentina es un país de América cuya capital es Buenos Aires, con una población de 45.767.158 de habitantes y una extensión de 2.780.400 km2, que ocupa el lugar 53 con un puntaje de 55.6 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, actualmente tiene una capacidad de generar 11.5 GW por medio de TECNOLOGÍAS RENOVABLES, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 52 con un puntaje de 74.2",
+    ),
+    (
+        "Armenia",
+        "Armenia es un país de Asia cuya capital es Ereván, con una población de 2.777.970 de habitantes y una extensión de 29.743 km2, que ocupa el lugar 62 con un puntaje de 53.7 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 55 con un puntaje de 73.8",
+    ),
+    (
+        "Australia",
+        "Australia es un país de Oceanía cuya capital es Camberra, con una población de 26.177.413 de habitantes y una extensión de 7.692.024 km2, que ocupa el lugar 41 con un puntaje de 58.2 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, actualmente tiene una capacidad de generar 51.9 GW por medio de TECNOLOGÍAS RENOVABLES, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 36 con un puntaje de 77.9",
+    ),
+    (
+        "Austria",
+        "Austria es un país de Europa cuya capital es Viena, con una población de 8.956.279 de habitantes y una extensión de 83.871 km2, que ocupa el lugar 8  con un puntaje de 67.9 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 6 con un puntaje de 83.0",
+    ),
+    (
+        "Azerbaiyán",
+        "Azerbaiyán es un país de Asia cuya capital es Bakú, con una población de 10.145.212 de habitantes y una extensión de 86.600 km2, que ocupa el lugar 44 con un puntaje de 57.6 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 57 con un puntaje de 73.6",
+    ),
+    (
+        "Bahamas",
+        "Bahamas es un país de América cuya capital es Nasáu, con una población de 409.984 de habitantes y una extensión de 13.878 km2,",
+    ),
+    (
+        "Bangladés",
+        "Bangladés es un país de Asia cuya capital es Daca, con una población de 171.186.372 de habitantes y una extensión de 147.570 km2,",
+    ),
+    (
+        "Barbados",
+        "Barbados es un país de América cuya capital es Bridgetown, con una población de 281.635 de habitantes y una extensión de 430 km2,",
+    ),
+    (
+        "Baréin",
+        "Baréin es un país de Asia cuya capital es Manama, con una población de 1.472.233 de habitantes y una extensión de 765 km2,",
+    ),
+    (
+        "Bélgica",
+        "Bélgica es un país de Europa cuya capital es Bruselas, con una población de 11.668.278 de habitantes y una extensión de 30.528 km2, que ocupa el lugar 26 con un puntaje de 61.9 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 18 con un puntaje de 80.7",
+    ),
+    (
+        "Belice",
+        "Belice es un país de América cuya capital es Belmopán, con una población de 405.272 de habitantes y una extensión de 22.966 km2,",
+    ),
+    (
+        "Benín",
+        "Benín es un país de África cuya capital es Porto Novo, con una población de 13.352.864 de habitantes y una extensión de 112.622 km2,",
+    ),
+    (
+        "Bielorrusia",
+        "Bielorrusia es un país de Europa cuya capital es Minsk, con una población de 9.228.937 de habitantes y una extensión de 207.600 km2, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 32 con un puntaje de 78.5",
+    ),
+    (
+        "Bolivia",
+        "Bolivia es un país de América cuya capital es Sucre, con una población de 12.224.110 de habitantes y una extensión de 1.098.581 km2, que ocupa el lugar 88 con un puntaje de 48.5 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 88 con un puntaje de 67.9",
+    ),
+    (
+        "Bosnia y Herzegovina",
+        "Bosnia y Herzegovina es un país de Europa cuya capital es Sarajevo, con una población de 3.233.526 de habitantes y una extensión de 51.197 km2,",
+    ),
+    (
+        "Botsuana",
+        "Botsuana es un país de África cuya capital es Gaborone, con una población de 2.630.296 de habitantes y una extensión de 581.730 km2, que ocupa el lugar 98 con un puntaje de 46.5 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA,",
+    ),
+    (
+        "Brasil",
+        "Brasil es un país de América cuya capital es Brasilia, con una población de 215.313.498 de habitantes y una extensión de 8.515.767 km2, que ocupa el lugar 12 con un puntaje de 65.9 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, actualmente tiene una capacidad de generar 228.2 GW por medio de TECNOLOGÍAS RENOVABLES, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 56 con un puntaje de 73.7",
+    ),
+    (
+        "Brunéi",
+        "Brunéi es un país de Asia cuya capital es Bandar Seri Begawan, con una población de 449.002 de habitantes y una extensión de 5.765 km2,",
+    ),
+    (
+        "Bulgaria",
+        "Bulgaria es un país de Europa cuya capital es Sofía, con una población de 6.465.000 de habitantes y una extensión de 110.879 km2, que ocupa el lugar 48 con un puntaje de 56.7 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 41 con un puntaje de 76.3",
+    ),
+    (
+        "Burkina Faso",
+        "Burkina Faso es un país de África cuya capital es Uagadugú, con una población de 22.673.762 de habitantes y una extensión de 274.200 km2,",
+    ),
+    (
+        "Burundi",
+        "Burundi es un país de África cuya capital es Gitega, con una población de 12.889.576 de habitantes y una extensión de 27.830 km2,",
+    ),
+    (
+        "Bután",
+        "Bután es un país de Asia cuya capital es Timbu, con una población de 782.455 de habitantes y una extensión de 38.394 km2, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 87 con un puntaje de 68.1",
+    ),
+    (
+        "Cabo Verde",
+        "Cabo Verde es un país de África cuya capital es Praia, con una población de 593.149 de habitantes y una extensión de 4.033 km2,",
+    ),
+    (
+        "Camboya",
+        "Camboya es un país de Asia cuya capital es Nom Pen, con una población de 16.767.842 de habitantes y una extensión de 181.035 km2,",
+    ),
+    (
+        "Camerún",
+        "Camerún es un país de África cuya capital es Yaundé, con una población de 27.914.536 de habitantes y una extensión de 475.440 km2,",
+    ),
+    (
+        "Canadá",
+        "Canadá es un país de América cuya capital es Ottawa, con una población de 38.929.902 de habitantes y una extensión de 9.984.670 km2, que ocupa el lugar 22 con un puntaje de 62.7 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, actualmente tiene una capacidad de generar 112.4 GW por medio de TECNOLOGÍAS RENOVABLES, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 25 con un puntaje de 79.2",
+    ),
+    (
+        "Catar",
+        "Catar es un país de Asia cuya capital es Doha, con una población de 2.695.122 de habitantes y una extensión de 11.586 km2,",
+    ),
+    (
+        "Chad",
+        "Chad es un país de África cuya capital es Yamena, con una población de 17.723.315 de habitantes y una extensión de 1.284.000 km2,",
+    ),
+    (
+        "Chile",
+        "Chile es un país de América cuya capital es Santiago, con una población de 19.603.733 de habitantes y una extensión de 756.102 km2, que ocupa el lugar 20 con un puntaje de 63.0 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, actualmente tiene una capacidad de generar 16.8 GW por medio de TECNOLOGÍAS RENOVABLES, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 35 con un puntaje de 78.1",
+    ),
+    (
+        "China",
+        "China es un país de Asia cuya capital es Pekín, con una población de 1.412.175.000 de habitantes y una extensión de 9.596.961 km2, que ocupa el lugar 14 con un puntaje de 64.1 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, actualmente tiene una capacidad de generar 2258.0 GW por medio de TECNOLOGÍAS RENOVABLES, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 47 con un puntaje de 74.8",
+    ),
+    (
+        "Chipre",
+        "Chipre es un país de Europa cuya capital es Nicosia, con una población de 1.251.488 de habitantes y una extensión de 9.251 km2, que ocupa el lugar 59 con un puntaje de 54.4 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 46 con un puntaje de 75.0",
+    ),
+    (
+        "Colombia",
+        "Colombia es un país de América cuya capital es Bogotá, con una población de 51.874.024 de habitantes y una extensión de 1.141.748 km2, que ocupa el lugar 35 con un puntaje de 59.9 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, actualmente tiene una capacidad de generar 14.2 GW por medio de TECNOLOGÍAS RENOVABLES, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 73 con un puntaje de 70.9",
+    ),
+    (
+        "Comoras",
+        "Comoras es un país de África cuya capital es Moroni, con una población de 836.774 de habitantes y una extensión de 2.235 km2,",
+    ),
+    (
+        "Corea del Norte",
+        "Corea del Norte es un país de Asia cuya capital es Pionyang, con una población de 26.059.202 de habitantes y una extensión de 120.538 km2,",
+    ),
+    (
+        "Corea del Sur",
+        "Corea del Sur es un país de Asia cuya capital es Seúl, con una población de 51.624.897 de habitantes y una extensión de 100.210 km2, actualmente tiene una capacidad de generar 35.8 GW por medio de TECNOLOGÍAS RENOVABLES, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 34 con un puntaje de 78.1",
+    ),
+    (
+        "Costa de Marfil",
+        "Costa de Marfil es un país de África cuya capital es Yamusukro, con una población de 28.160.542 de habitantes y una extensión de 322.463 km2,",
+    ),
+    (
+        "Costa Rica",
+        "Costa Rica es un país de América cuya capital es San José, con una población de 5.180.829 de habitantes y una extensión de 51.100 km2, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 71 con un puntaje de 71.3",
+    ),
+    (
+        "Croacia",
+        "Croacia es un país de Europa cuya capital es Zagreb, con una población de 3.855.641 de habitantes y una extensión de 56.594 km2, que ocupa el lugar 28 con un puntaje de 61.4 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 8 con un puntaje de 82.4",
+    ),
+    (
+        "Cuba",
+        "Cuba es un país de América cuya capital es La Habana, con una población de 11.212.191 de habitantes y una extensión de 109.884 km2, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 40 con un puntaje de 76.6",
+    ),
+    (
+        "Dinamarca",
+        "Dinamarca es un país de Europa cuya capital es Copenhague, con una población de 5.903.037 de habitantes y una extensión de 43.094 km2, que ocupa el lugar 2  con un puntaje de 75.2 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 3 con un puntaje de 85.3",
+    ),
+    (
+        "Dominica",
+        "Dominica es un país de América cuya capital es Roseau, con una población de 73.000 de habitantes y una extensión de 751 km2,",
+    ),
+    (
+        "Ecuador",
+        "Ecuador es un país de América cuya capital es Quito, con una población de 18.001.000 de habitantes y una extensión de 256.370 km2, que ocupa el lugar 70 con un puntaje de 52.1 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 58 con un puntaje de 73.5",
+    ),
+    (
+        "Egipto",
+        "Egipto es un país de África cuya capital es El Cairo, con una población de 110.990.103 de habitantes y una extensión de 1.001.450 km2, que ocupa el lugar 84 con un puntaje de 49.3 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, actualmente tiene una capacidad de generar 23.9 GW por medio de TECNOLOGÍAS RENOVABLES, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 77 con un puntaje de 70.1",
+    ),
+    (
+        "El Salvador",
+        "El Salvador es un país de América cuya capital es San Salvador, con una población de 6.336.392 de habitantes y una extensión de 21.041 km2, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 78 con un puntaje de 69.9",
+    ),
+    (
+        "Emiratos Árabes Unidos",
+        "Emiratos Árabes Unidos es un país de Asia cuya capital es Abu Dabi, con una población de 9.441.129 de habitantes y una extensión de 83.600 km2,",
+    ),
+    (
+        "Eritrea",
+        "Eritrea es un país de África cuya capital es Asmara, con una población de 3.684.032 de habitantes y una extensión de 117.600 km2,",
+    ),
+    (
+        "Eslovaquia",
+        "Eslovaquia es un país de Europa cuya capital es Bratislava, con una población de 5.434.712 de habitantes y una extensión de 49.035 km2, que ocupa el lugar 33 con un puntaje de 60.3 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 16 con un puntaje de 80.8",
+    ),
+    (
+        "Eslovenia",
+        "Eslovenia es un país de Europa cuya capital es Liubliana, con una población de 2.108.732 de habitantes y una extensión de 20.273 km2, que ocupa el lugar 21 con un puntaje de 62.9 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 12 con un puntaje de 81.2",
+    ),
+    (
+        "España",
+        "España es un país de Europa cuya capital es Madrid, con una población de 47.415.750 de habitantes y una extensión de 505.992 km2, que ocupa el lugar 23 con un puntaje de 62.5 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, actualmente tiene una capacidad de generar 85.3 GW por medio de TECNOLOGÍAS RENOVABLES, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 14 con un puntaje de 81.0",
+    ),
+    (
+        "Estados Unidos",
+        "Estados Unidos es un país de América cuya capital es Washington D.C., con una población de 333.287.557 de habitantes y una extensión de 9.833.517 km2, actualmente tiene una capacidad de generar 468.0 GW por medio de TECNOLOGÍAS RENOVABLES,",
+    ),
+    (
+        "Estonia",
+        "Estonia es un país de Europa cuya capital es Tallin, con una población de 1.331.796 de habitantes y una extensión de 45.227 km2, que ocupa el lugar 9  con un puntaje de 67.8 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 17 con un puntaje de 80.8",
+    ),
+    (
+        "Etiopía",
+        "Etiopía es un país de África cuya capital es Adís Abeba, con una población de 123.379.924 de habitantes y una extensión de 1.104.300 km2,",
+    ),
+    (
+        "Filipinas",
+        "Filipinas es un país de Asia cuya capital es Manila, con una población de 115.559.009 de habitantes y una extensión de 300.000 km2, que ocupa el lugar 76 con un puntaje de 50.9 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 92 con un puntaje de 67.1",
+    ),
+    (
+        "Finlandia",
+        "Finlandia es un país de Europa cuya capital es Helsinki, con una población de 5.556.210 de habitantes y una extensión de 338.424 km2, que ocupa el lugar 3  con un puntaje de 74.5 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 1 con un puntaje de 87.0",
+    ),
+    (
+        "Fiyi",
+        "Fiyi es un país de Oceanía cuya capital es Suva, con una población de 929.766 de habitantes y una extensión de 18.274 km2, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 96 con un puntaje de 66.3",
+    ),
+    (
+        "Francia",
+        "Francia es un país de Europa cuya capital es París, con una población de 67.971.311 de habitantes y una extensión de 551.695 km2, que ocupa el lugar 5  con un puntaje de 71.1 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, actualmente tiene una capacidad de generar 79.1 GW por medio de TECNOLOGÍAS RENOVABLES, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 5 con un puntaje de 83.1",
+    ),
+    (
+        "Gabón",
+        "Gabón es un país de África cuya capital es Libreville, con una población de 2.388.992 de habitantes y una extensión de 267.667 km2, que ocupa el lugar 94 con un puntaje de 47.3 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 97 con un puntaje de 66.1",
+    ),
+    (
+        "Gambia",
+        "Gambia es un país de África cuya capital es Banjul, con una población de 2.705.992 de habitantes y una extensión de 11.300 km2,",
+    ),
+    (
+        "Georgia",
+        "Georgia es un país de Asia cuya capital es Tiflis, con una población de 3.736.400 de habitantes y una extensión de 69.700 km2, que ocupa el lugar 45 con un puntaje de 57.4 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 50 con un puntaje de 74.5",
+    ),
+    (
+        "Ghana",
+        "Ghana es un país de África cuya capital es Acra, con una población de 33.475.870 de habitantes y una extensión de 238.533 km2, que ocupa el lugar 81 con un puntaje de 49.9 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA,",
+    ),
+    (
+        "Granada",
+        "Granada es un país de América cuya capital es Saint George, con una población de 125.438 de habitantes y una extensión de 344 km2,",
+    ),
+    (
+        "Grecia",
+        "Grecia es un país de Europa cuya capital es Atenas, con una población de 10.603.810 de habitantes y una extensión de 131.957 km2, que ocupa el lugar 40 con un puntaje de 58.4 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 27 con un puntaje de 79.1",
+    ),
+    (
+        "Guatemala",
+        "Guatemala es un país de América cuya capital es Ciudad de Guatemala, con una población de 17.357.886 de habitantes y una extensión de 108.889 km2, que ocupa el lugar 83 con un puntaje de 49.5 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA,",
+    ),
+    (
+        "Guinea",
+        "Guinea es un país de África cuya capital es Conakri, con una población de 13.859.341 de habitantes y una extensión de 245.857 km2,",
+    ),
+    (
+        "Guinea-Bisáu",
+        "Guinea-Bisáu es un país de África cuya capital es Bisáu, con una población de 2.105.566 de habitantes y una extensión de 36.125 km2,",
+    ),
+    (
+        "Guinea Ecuatorial",
+        "Guinea Ecuatorial es un país de África cuya capital es Malabo, con una población de 1.674.908 de habitantes y una extensión de 28.051 km2,",
+    ),
+    (
+        "Guyana",
+        "Guyana es un país de América cuya capital es Georgetown, con una población de 808.726 de habitantes y una extensión de 214.969 km2, que ocupa el lugar 92 con un puntaje de 47.7 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 90 con un puntaje de 67.5",
+    ),
+    (
+        "Haití",
+        "Haití es un país de América cuya capital es Puerto Príncipe, con una población de 11.584.996 de habitantes y una extensión de 27.750 km2,",
+    ),
+    (
+        "Honduras",
+        "Honduras es un país de América cuya capital es Tegucigalpa, con una población de 10.432.415 de habitantes y una extensión de 112.492 km2, que ocupa el lugar 82 con un puntaje de 49.7 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 100 con un puntaje de 65.5",
+    ),
+    (
+        "Hungría",
+        "Hungría es un país de Europa cuya capital es Budapest, con una población de 9.683.505 de habitantes y una extensión de 93.028 km2, que ocupa el lugar 39 con un puntaje de 58.6 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 21 con un puntaje de 80.4",
+    ),
+    (
+        "India",
+        "India es un país de Asia cuya capital es Nueva Delhi, con una población de 1.417.173.173 de habitantes y una extensión de 3.287.263 km2, que ocupa el lugar 63 con un puntaje de 53.5 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, actualmente tiene una capacidad de generar 250.5 GW por medio de TECNOLOGÍAS RENOVABLES, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 99 con un puntaje de 65.7",
+    ),
+    (
+        "Indonesia",
+        "Indonesia es un país de Asia cuya capital es Yakarta, con una población de 275.501.339 de habitantes y una extensión de 1.904.569 km2, que ocupa el lugar 68 con un puntaje de 52.5 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, actualmente tiene una capacidad de generar 29.4 GW por medio de TECNOLOGÍAS RENOVABLES, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 82 con un puntaje de 69.1",
+    ),
+    (
+        "Irak",
+        "Irak es un país de Asia cuya capital es Bagdad, con una población de 44.496.122 de habitantes y una extensión de 438.317 km2,",
+    ),
+    (
+        "Irán",
+        "Irán es un país de Asia cuya capital es Teherán, con una población de 88.550.570 de habitantes y una extensión de 1.648.195 km2, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 61 con un puntaje de 73.0",
+    ),
+    (
+        "Irlanda",
+        "Irlanda es un país de Europa cuya capital es Dublín, con una población de 5.086.988 de habitantes y una extensión de 70.273 km2, que ocupa el lugar 27 con un puntaje de 61.6 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 31 con un puntaje de 78.6",
+    ),
+    (
+        "Islandia",
+        "Islandia es un país de Europa cuya capital es Reikiavik, con una población de 375.318 de habitantes y una extensión de 103.000 km2, que ocupa el lugar 7  con un puntaje de 68.0 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 15 con un puntaje de 80.8",
+    ),
+    (
+        "Islas Marshall",
+        "Islas Marshall es un país de Oceanía cuya capital es Majuro, con una población de 41.569 de habitantes y una extensión de 181 km2,",
+    ),
+    (
+        "Islas Salomón",
+        "Islas Salomón es un país de Oceanía cuya capital es Honiara, con una población de 724.273 de habitantes y una extensión de 28.896 km2,",
+    ),
+    (
+        "Israel",
+        "Israel es un país de Asia cuya capital es Jerusalén, con una población de 9.557.500 de habitantes y una extensión de 20.770 km2, que ocupa el lugar 42 con un puntaje de 58.0 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 49 con un puntaje de 74.6",
+    ),
+    (
+        "Italia",
+        "Italia es un país de Europa cuya capital es Roma, con una población de 58.940.142 de habitantes y una extensión de 301.340 km2, que ocupa el lugar 31 con un puntaje de 60.8 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, actualmente tiene una capacidad de generar 75.8 GW por medio de TECNOLOGÍAS RENOVABLES, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 22 con un puntaje de 80.3",
+    ),
+    (
+        "Jamaica",
+        "Jamaica es un país de América cuya capital es Kingston, con una población de 2.827.377 de habitantes y una extensión de 10.991 km2, que ocupa el lugar 79 con un puntaje de 50.3 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 75 con un puntaje de 70.5",
+    ),
+    (
+        "Japón",
+        "Japón es un país de Asia cuya capital es Tokio, con una población de 125.124.989 de habitantes y una extensión de 377.975 km2, que ocupa el lugar 47 con un puntaje de 56.9 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, actualmente tiene una capacidad de generar 134.5 GW por medio de TECNOLOGÍAS RENOVABLES, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 19 con un puntaje de 80.7",
+    ),
+    (
+        "Jordania",
+        "Jordania es un país de Asia cuya capital es Amán, con una población de 11.285.869 de habitantes y una extensión de 89.342 km2, que ocupa el lugar 67 con un puntaje de 52.7 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 79 con un puntaje de 69.7",
+    ),
+    (
+        "Kazajistán",
+        "Kazajistán es un país de Asia cuya capital es Astaná, con una población de 19.398.331 de habitantes y una extensión de 2.724.900 km2, que ocupa el lugar 69 con un puntaje de 52.3 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 70 con un puntaje de 71.5",
+    ),
+    (
+        "Kenia",
+        "Kenia es un país de África cuya capital es Nairobi, con una población de 54.027.487 de habitantes y una extensión de 580.367 km2, que ocupa el lugar 75 con un puntaje de 51.1 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA,",
+    ),
+    (
+        "Kirguistán",
+        "Kirguistán es un país de Asia cuya capital es Biskek, con una población de 6.806.684 de habitantes y una extensión de 199.951 km2, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 53 con un puntaje de 74.1",
+    ),
+    (
+        "Kiribati",
+        "Kiribati es un país de Oceanía cuya capital es Tarawa Sur, con una población de 131.232 de habitantes y una extensión de 811 km2,",
+    ),
+    (
+        "Kuwait",
+        "Kuwait es un país de Asia cuya capital es Ciudad de Kuwait, con una población de 4.268.873 de habitantes y una extensión de 17.818 km2, que ocupa el lugar 80 con un puntaje de 50.1 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 83 con un puntaje de 68.9",
+    ),
+    (
+        "Laos",
+        "Laos es un país de Asia cuya capital es Vientián, con una población de 7.529.475 de habitantes y una extensión de 236.800 km2, que ocupa el lugar 99 con un puntaje de 46.3 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA,",
+    ),
+    (
+        "Lesoto",
+        "Lesoto es un país de África cuya capital es Maseru, con una población de 2.306.000 de habitantes y una extensión de 30.355 km2,",
+    ),
+    (
+        "Letonia",
+        "Letonia es un país de Europa cuya capital es Riga, con una población de 1.879.384 de habitantes y una extensión de 64.589 km2, que ocupa el lugar 16 con un puntaje de 63.8 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 13 con un puntaje de 81.2",
+    ),
+    (
+        "Líbano",
+        "Líbano es un país de Asia cuya capital es Beirut, con una población de 5.489.739 de habitantes y una extensión de 10.400 km2, que ocupa el lugar 95 con un puntaje de 47.1 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 80 con un puntaje de 69.5",
+    ),
+    (
+        "Liberia",
+        "Liberia es un país de África cuya capital es Monrovia, con una población de 5.302.681 de habitantes y una extensión de 111.369 km2,",
+    ),
+    (
+        "Libia",
+        "Libia es un país de África cuya capital es Trípoli, con una población de 6.812.341 de habitantes y una extensión de 1.759.540 km2,",
+    ),
+    (
+        "Liechtenstein",
+        "Liechtenstein es un país de Europa cuya capital es Vaduz, con una población de 39.327 de habitantes y una extensión de 160 km2,",
+    ),
+    (
+        "Lituania",
+        "Lituania es un país de Europa cuya capital es Vilna, con una población de 2.833.042 de habitantes y una extensión de 65.300 km2, que ocupa el lugar 11 con un puntaje de 66.3 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 29 con un puntaje de 78.8",
+    ),
+    (
+        "Luxemburgo",
+        "Luxemburgo es un país de Europa cuya capital es Luxemburgo, con una población de 647.863 de habitantes y una extensión de 2.586 km2, que ocupa el lugar 18 con un puntaje de 63.2 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 39 con un puntaje de 76.7",
+    ),
+    (
+        "Macedonia del Norte",
+        "Macedonia del Norte es un país de Europa cuya capital es Skopie, con una población de 2.058.422 de habitantes y una extensión de 25.713 km2,",
+    ),
+    (
+        "Madagascar",
+        "Madagascar es un país de África cuya capital es Antananarivo, con una población de 29.611.714 de habitantes y una extensión de 587.041 km2,",
+    ),
+    (
+        "Malasia",
+        "Malasia es un país de Asia cuya capital es Kuala Lumpur, con una población de 33.938.221 de habitantes y una extensión de 330.803 km2, que ocupa el lugar 43 con un puntaje de 57.8 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 69 con un puntaje de 71.7",
+    ),
+    (
+        "Malaui",
+        "Malaui es un país de África cuya capital es Lilongüe, con una población de 20.405.317 de habitantes y una extensión de 118.484 km2,",
+    ),
+    (
+        "Maldivas",
+        "Maldivas es un país de Asia cuya capital es Malé, con una población de 523.787 de habitantes y una extensión de 298 km2, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 86 con un puntaje de 68.3",
+    ),
+    (
+        "Malí",
+        "Malí es un país de África cuya capital es Bamako, con una población de 22.593.590 de habitantes y una extensión de 1.240.192 km2,",
+    ),
+    (
+        "Malta",
+        "Malta es un país de Europa cuya capital es La Valeta, con una población de 533.286 de habitantes y una extensión de 316 km2, que ocupa el lugar 52 con un puntaje de 55.8 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 24 con un puntaje de 79.3",
+    ),
+    (
+        "Marruecos",
+        "Marruecos es un país de África cuya capital es Rabat, con una población de 37.457.856 de habitantes y una extensión de 446.550 km2, que ocupa el lugar 38 con un puntaje de 58.8 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 72 con un puntaje de 71.1",
+    ),
+    (
+        "Mauricio",
+        "Mauricio es un país de África cuya capital es Port Louis, con una población de 1.262.523 de habitantes y una extensión de 2.040 km2, que ocupa el lugar 56 con un puntaje de 55.0 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 98 con un puntaje de 65.9",
+    ),
+    (
+        "Mauritania",
+        "Mauritania es un país de África cuya capital es Nuakchot, con una población de 4.736.139 de habitantes y una extensión de 1.030.700 km2,",
+    ),
+    (
+        "México",
+        "México es un país de América cuya capital es Ciudad de México, con una población de 127.504.125 de habitantes y una extensión de 1.964.375 km2, que ocupa el lugar 57 con un puntaje de 54.8 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, actualmente tiene una capacidad de generar 38.6 GW por medio de TECNOLOGÍAS RENOVABLES, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 68 con un puntaje de 71.9",
+    ),
+    (
+        "Micronesia",
+        "Micronesia es un país de Oceanía cuya capital es Palikir, con una población de 114.164 de habitantes y una extensión de 702 km2,",
+    ),
+    (
+        "Moldavia",
+        "Moldavia es un país de Europa cuya capital es Chisináu, con una población de 2.538.894 de habitantes y una extensión de 33.851 km2, que ocupa el lugar 78 con un puntaje de 50.5 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 30 con un puntaje de 78.8",
+    ),
+    (
+        "Mónaco",
+        "Mónaco es un país de Europa cuya capital es Mónaco, con una población de 36.469 de habitantes y una extensión de 2 km2,",
+    ),
+    (
+        "Mongolia",
+        "Mongolia es un país de Asia cuya capital es Ulán Bator, con una población de 3.398.366 de habitantes y una extensión de 1.564.116 km2, que ocupa el lugar 100 con un puntaje de 46.1 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 95 con un puntaje de 66.5",
+    ),
+    (
+        "Montenegro",
+        "Montenegro es un país de Europa cuya capital es Podgorica, con una población de 617.213 de habitantes y una extensión de 13.812 km2, que ocupa el lugar 55 con un puntaje de 55.2 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 64 con un puntaje de 72.7",
+    ),
+    (
+        "Mozambique",
+        "Mozambique es un país de África cuya capital es Maputo, con una población de 32.975.998 de habitantes y una extensión de 799.380 km2,",
+    ),
+    (
+        "Namibia",
+        "Namibia es un país de África cuya capital es Windhoek, con una población de 2.567.012 de habitantes y una extensión de 824.292 km2, que ocupa el lugar 97 con un puntaje de 46.7 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA,",
+    ),
+    (
+        "Nauru",
+        "Nauru es un país de Oceanía cuya capital es Yaren, con una población de 12.668 de habitantes y una extensión de 21 km2,",
+    ),
+    (
+        "Nepal",
+        "Nepal es un país de Asia cuya capital es Katmandú, con una población de 30.547.580 de habitantes y una extensión de 147.181 km2,",
+    ),
+    (
+        "Nicaragua",
+        "Nicaragua es un país de América cuya capital es Managua, con una población de 6.948.392 de habitantes y una extensión de 130.370 km2, que ocupa el lugar 86 con un puntaje de 48.9 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 94 con un puntaje de 66.7",
+    ),
+    (
+        "Níger",
+        "Níger es un país de África cuya capital es Niamey, con una población de 26.207.977 de habitantes y una extensión de 1.267.000 km2,",
+    ),
+    (
+        "Nigeria",
+        "Nigeria es un país de África cuya capital es Abuya, con una población de 218.541.212 de habitantes y una extensión de 923.768 km2,",
+    ),
+    (
+        "Noruega",
+        "Noruega es un país de Europa cuya capital es Oslo, con una población de 5.457.127 de habitantes y una extensión de 323.802 km2, que ocupa el lugar 6  con un puntaje de 69.9 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, actualmente tiene una capacidad de generar 28.9 GW por medio de TECNOLOGÍAS RENOVABLES, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 7 con un puntaje de 82.7",
+    ),
+    (
+        "Nueva Zelanda",
+        "Nueva Zelanda es un país de Oceanía cuya capital es Wellington, con una población de 5.118.700 de habitantes y una extensión de 268.021 km2, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 28 con un puntaje de 79.0",
+    ),
+    (
+        "Omán",
+        "Omán es un país de Asia cuya capital es Mascate, con una población de 4.576.298 de habitantes y una extensión de 309.500 km2, que ocupa el lugar 64 con un puntaje de 53.3 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 76 con un puntaje de 70.3",
+    ),
+    (
+        "Países Bajos",
+        "Países Bajos es un país de Europa cuya capital es Ámsterdam, con una población de 17.700.982 de habitantes y una extensión de 41.543 km2, actualmente tiene una capacidad de generar 27.5 GW por medio de TECNOLOGÍAS RENOVABLES, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 23 con un puntaje de 80.0",
+    ),
+    (
+        "Pakistán",
+        "Pakistán es un país de Asia cuya capital es Islamabad, con una población de 235.824.862 de habitantes y una extensión de 796.095 km2, actualmente tiene una capacidad de generar 26.3 GW por medio de TECNOLOGÍAS RENOVABLES,",
+    ),
+    (
+        "Palaos",
+        "Palaos es un país de Oceanía cuya capital es Ngerulmud, con una población de 18.055 de habitantes y una extensión de 459 km2,",
+    ),
+    (
+        "Panamá",
+        "Panamá es un país de América cuya capital es Ciudad de Panamá, con una población de 4.408.581 de habitantes y una extensión de 75.420 km2, que ocupa el lugar 49 con un puntaje de 56.5 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 85 con un puntaje de 68.5",
+    ),
+    (
+        "Papúa Nueva Guinea",
+        "Papúa Nueva Guinea es un país de Oceanía cuya capital es Puerto Moresby, con una población de 10.142.619 de habitantes y una extensión de 462.840 km2,",
+    ),
+    (
+        "Paraguay",
+        "Paraguay es un país de América cuya capital es Asunción, con una población de 6.780.744 de habitantes y una extensión de 406.752 km2, que ocupa el lugar 37 con un puntaje de 59.1 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 81 con un puntaje de 69.3",
+    ),
+    (
+        "Perú",
+        "Perú es un país de América cuya capital es Lima, con una población de 34.049.588 de habitantes y una extensión de 1.285.216 km2, que ocupa el lugar 50 con un puntaje de 56.2 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 65 con un puntaje de 72.5",
+    ),
+    (
+        "Polonia",
+        "Polonia es un país de Europa cuya capital es Varsovia, con una población de 37.561.599 de habitantes y una extensión de 312.685 km2, que ocupa el lugar 51 con un puntaje de 56.0 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, actualmente tiene una capacidad de generar 24.8 GW por medio de TECNOLOGÍAS RENOVABLES, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 9 con un puntaje de 82.1",
+    ),
+    (
+        "Portugal",
+        "Portugal es un país de Europa cuya capital es Lisboa, con una población de 10.379.007 de habitantes y una extensión de 92.090 km2, que ocupa el lugar 24 con un puntaje de 62.2 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 20 con un puntaje de 80.6",
+    ),
+    (
+        "Reino Unido",
+        "Reino Unido es un país de Europa cuya capital es Londres, con una población de 67.508.936 de habitantes y una extensión de 242.495 km2, actualmente tiene una capacidad de generar 50.2 GW por medio de TECNOLOGÍAS RENOVABLES, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 11 con un puntaje de 81.9",
+    ),
+    (
+        "República Centroafricana",
+        "República Centroafricana es un país de África cuya capital es Bangui, con una población de 5.579.144 de habitantes y una extensión de 622.984 km2,",
+    ),
+    (
+        "República Checa",
+        "República Checa es un país de Europa cuya capital es Praga, con una población de 10.516.707 de habitantes y una extensión de 78.867 km2,",
+    ),
+    (
+        "República del Congo",
+        "República del Congo es un país de África cuya capital es Brazzaville, con una población de 5.970.424 de habitantes y una extensión de 342.000 km2,",
+    ),
+    (
+        "República Democrática del Congo",
+        "República Democrática del Congo es un país de África cuya capital es Kinsasa, con una población de 99.010.212 de habitantes y una extensión de 2.344.858 km2,",
+    ),
+    (
+        "República Dominicana",
+        "República Dominicana es un país de América cuya capital es Santo Domingo, con una población de 11.228.821 de habitantes y una extensión de 48.670 km2,",
+    ),
+    (
+        "Ruanda",
+        "Ruanda es un país de África cuya capital es Kigali, con una población de 13.776.698 de habitantes y una extensión de 26.338 km2,",
+    ),
+    (
+        "Rumania",
+        "Rumania es un país de Europa cuya capital es Bucarest, con una población de 19.038.098 de habitantes y una extensión de 238.391 km2, que ocupa el lugar 46 con un puntaje de 57.1 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA,",
+    ),
+    (
+        "Rusia",
+        "Rusia es un país de Europa/Asia cuya capital es Moscú, con una población de 144.236.700 de habitantes y una extensión de 17.098.242 km2, actualmente tiene una capacidad de generar 33.1 GW por medio de TECNOLOGÍAS RENOVABLES, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 67 con un puntaje de 72.0",
+    ),
+    (
+        "Samoa",
+        "Samoa es un país de Oceanía cuya capital es Apia, con una población de 222.382 de habitantes y una extensión de 2.831 km2,",
+    ),
+    (
+        "San Cristóbal y Nieves",
+        "San Cristóbal y Nieves es un país de América cuya capital es Basseterre, con una población de 47.657 de habitantes y una extensión de 261 km2,",
+    ),
+    (
+        "San Marino",
+        "San Marino es un país de Europa cuya capital es San Marino, con una población de 33.660 de habitantes y una extensión de 61 km2,",
+    ),
+    (
+        "San Vicente y las Granadinas",
+        "San Vicente y las Granadinas es un país de América cuya capital es Kingstown, con una población de 103.948 de habitantes y una extensión de 389 km2,",
+    ),
+    (
+        "Santa Lucía",
+        "Santa Lucía es un país de América cuya capital es Castries, con una población de 179.857 de habitantes y una extensión de 616 km2,",
+    ),
+    (
+        "Santo Tomé y Príncipe",
+        "Santo Tomé y Príncipe es un país de África cuya capital es Santo Tomé, con una población de 227.380 de habitantes y una extensión de 964 km2,",
+    ),
+    (
+        "Senegal",
+        "Senegal es un país de África cuya capital es Dakar, con una población de 17.316.449 de habitantes y una extensión de 196.722 km2, que ocupa el lugar 89 con un puntaje de 48.3 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA,",
+    ),
+    (
+        "Serbia",
+        "Serbia es un país de Europa cuya capital es Belgrado, con una población de 6.664.449 de habitantes y una extensión de 88.361 km2, que ocupa el lugar 60 con un puntaje de 54.1 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 33 con un puntaje de 78.2",
+    ),
+    (
+        "Seychelles",
+        "Seychelles es un país de África cuya capital es Victoria, con una población de 100.060 de habitantes y una extensión de 455 km2,",
+    ),
+    (
+        "Sierra Leona",
+        "Sierra Leona es un país de África cuya capital es Freetown, con una población de 8.605.718 de habitantes y una extensión de 71.740 km2,",
+    ),
+    (
+        "Singapur",
+        "Singapur es un país de Asia cuya capital es Singapur, con una población de 5.637.000 de habitantes y una extensión de 719 km2,",
+    ),
+    (
+        "Siria",
+        "Siria es un país de Asia cuya capital es Damasco, con una población de 22.125.249 de habitantes y una extensión de 185.180 km2,",
+    ),
+    (
+        "Somalia",
+        "Somalia es un país de África cuya capital es Mogadiscio, con una población de 17.597.511 de habitantes y una extensión de 637.657 km2,",
+    ),
+    (
+        "Sri Lanka",
+        "Sri Lanka es un país de Asia cuya capital es Colombo, con una población de 21.832.143 de habitantes y una extensión de 65.610 km2, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 89 con un puntaje de 67.7",
+    ),
+    (
+        "Sudáfrica",
+        "Sudáfrica es un país de África cuya capital es Pretoria, con una población de 59.893.885 de habitantes y una extensión de 1.221.037 km2, actualmente tiene una capacidad de generar 25.4 GW por medio de TECNOLOGÍAS RENOVABLES,",
+    ),
+    (
+        "Sudán",
+        "Sudán es un país de África cuya capital es Jartum, con una población de 46.874.204 de habitantes y una extensión de 1.861.484 km2,",
+    ),
+    (
+        "Sudán del Sur",
+        "Sudán del Sur es un país de África cuya capital es Yuba, con una población de 10.913.164 de habitantes y una extensión de 619.745 km2,",
+    ),
+    (
+        "Suecia",
+        "Suecia es un país de Europa cuya capital es Estocolmo, con una población de 10.486.941 de habitantes y una extensión de 450.295 km2, que ocupa el lugar 1  con un puntaje de 78.4 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, actualmente tiene una capacidad de generar 28.2 GW por medio de TECNOLOGÍAS RENOVABLES, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 2 con un puntaje de 85.7",
+    ),
+    (
+        "Suiza",
+        "Suiza es un país de Europa cuya capital es Berna, con una población de 8.776.661 de habitantes y una extensión de 41.284 km2, que ocupa el lugar 4  con un puntaje de 73.4 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 26 con un puntaje de 79.2",
+    ),
+    (
+        "Surinam",
+        "Surinam es un país de América cuya capital es Paramaribo, con una población de 618.040 de habitantes y una extensión de 163.820 km2, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 84 con un puntaje de 68.7",
+    ),
+    (
+        "Tailandia",
+        "Tailandia es un país de Asia cuya capital es Bangkok, con una población de 71.601.103 de habitantes y una extensión de 513.120 km2, que ocupa el lugar 54 con un puntaje de 55.4 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 43 con un puntaje de 75.3",
+    ),
+    (
+        "Tanzania",
+        "Tanzania es un país de África cuya capital es Dodoma, con una población de 65.497.748 de habitantes y una extensión de 945.087 km2,",
+    ),
+    (
+        "Tayikistán",
+        "Tayikistán es un país de Asia cuya capital es Dusambé, con una población de 9.952.787 de habitantes y una extensión de 143.100 km2,",
+    ),
+    (
+        "Timor Oriental",
+        "Timor Oriental es un país de Asia cuya capital es Dili, con una población de 1.341.296 de habitantes y una extensión de 14.874 km2,",
+    ),
+    (
+        "Togo",
+        "Togo es un país de África cuya capital es Lomé, con una población de 8.848.696 de habitantes y una extensión de 56.785 km2,",
+    ),
+    (
+        "Tonga",
+        "Tonga es un país de Oceanía cuya capital es Nukualofa, con una población de 106.858 de habitantes y una extensión de 747 km2,",
+    ),
+    (
+        "Trinidad y Tobago",
+        "Trinidad y Tobago es un país de América cuya capital es Puerto España, con una población de 1.531.044 de habitantes y una extensión de 5.130 km2,",
+    ),
+    (
+        "Túnez",
+        "Túnez es un país de África cuya capital es Túnez, con una población de 12.356.117 de habitantes y una extensión de 163.610 km2, que ocupa el lugar 74 con un puntaje de 51.3 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 60 con un puntaje de 73.2",
+    ),
+    (
+        "Turkmenistán",
+        "Turkmenistán es un país de Asia cuya capital es Asjabad, con una población de 6.430.770 de habitantes y una extensión de 488.100 km2,",
+    ),
+    (
+        "Turquía",
+        "Turquía es un país de Asia/Europa cuya capital es Ankara, con una población de 85.341.241 de habitantes y una extensión de 783.562 km2, actualmente tiene una capacidad de generar 48.7 GW por medio de TECNOLOGÍAS RENOVABLES, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 63 con un puntaje de 72.8",
+    ),
+    (
+        "Tuvalu",
+        "Tuvalu es un país de Oceanía cuya capital es Funafuti, con una población de 11.312 de habitantes y una extensión de 26 km2,",
+    ),
+    (
+        "Ucrania",
+        "Ucrania es un país de Europa cuya capital es Kiev, con una población de 38.000.000 de habitantes y una extensión de 603.500 km2, que ocupa el lugar 77 con un puntaje de 50.7 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 42 con un puntaje de 75.7",
+    ),
+    (
+        "Uganda",
+        "Uganda es un país de África cuya capital es Kampala, con una población de 47.249.535 de habitantes y una extensión de 241.038 km2,",
+    ),
+    (
+        "Uruguay",
+        "Uruguay es un país de América cuya capital es Montevideo, con una población de 3.422.794 de habitantes y una extensión de 176.215 km2, que ocupa el lugar 34 con un puntaje de 60.2 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 38 con un puntaje de 77.4",
+    ),
+    (
+        "Uzbekistán",
+        "Uzbekistán es un país de Asia cuya capital es Taskent, con una población de 35.648.100 de habitantes y una extensión de 447.400 km2, que ocupa el lugar 93 con un puntaje de 47.5 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 59 con un puntaje de 73.4",
+    ),
+    (
+        "Vanuatu",
+        "Vanuatu es un país de Oceanía cuya capital es Port Vila, con una población de 326.740 de habitantes y una extensión de 12.189 km2,",
+    ),
+    (
+        "Vaticano",
+        "Vaticano es un país de Europa cuya capital es Ciudad del Vaticano, con una población de 800 de habitantes y una extensión de 1 km2,",
+    ),
+    (
+        "Venezuela",
+        "Venezuela es un país de América cuya capital es Caracas, con una población de 28.301.696 de habitantes y una extensión de 912.050 km2,",
+    ),
+    (
+        "Vietnam",
+        "Vietnam es un país de Asia cuya capital es Hanói, con una población de 98.186.856 de habitantes y una extensión de 331.212 km2, que ocupa el lugar 32 con un puntaje de 60.5 en el ÍNDICE DE TRANSICIÓN ENERGÉTICA, actualmente tiene una capacidad de generar 52.4 GW por medio de TECNOLOGÍAS RENOVABLES, en cuanto al indicador de DESARROLLO SOSTENIBLE ocupa el lugar 48 con un puntaje de 74.7",
+    ),
+    (
+        "Yemen",
+        "Yemen es un país de Asia cuya capital es Saná, con una población de 33.696.614 de habitantes y una extensión de 527.968 km2,",
+    ),
+    (
+        "Yibuti",
+        "Yibuti es un país de África cuya capital es Yibuti, con una población de 1.120.849 de habitantes y una extensión de 23.200 km2,",
+    ),
+    (
+        "Zambia",
+        "Zambia es un país de África cuya capital es Lusaka, con una población de 20.017.675 de habitantes y una extensión de 752.612 km2,",
+    ),
+    (
+        "Zimbabue",
+        "Zimbabue es un país de África cuya capital es Harare, con una población de 16.320.537 de habitantes y una extensión de 390.757 km2,",
+    ),
+    (
+        "Yibuti",
+        "Yibuti es un país de  cuya capital es Yibuti, con una población de 1,136,000 de habitantes y una extensión de 23.200 km2,",
+    ),
+    (
+        "Zambia",
+        "Zambia es un país de  cuya capital es Lusaka, con una población de 20,569,000 de habitantes y una extensión de 752.618 km2,",
+    ),
+    (
+        "Zimbabue",
+        "Zimbabue es un país de 16,665,000 cuya capital es Harare, con una población de 16,665,000 de habitantes y una extensión de 390.757 km2,",
+    )
 ]
