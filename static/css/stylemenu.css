@@ -10,6 +10,7 @@
     color: white;
     z-index: 1000;
     border-radius: 15px;
+    justify-items: center;
   }
 
   .navbar ul {
@@ -31,4 +32,9 @@
   .tituloMenu {
     color: #ffffff;
     font-size: 16px;
+    margin: 0%;
+  }
+
+  .opcionesMenu {
+    margin: 0%;
   }
