@@ -12,25 +12,30 @@
  }
 
  .mapaContinente {
-   width: 200px;
-   height: 200px;
-   margin-bottom: 50px;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.3s ease;
+ }
+
+ .mapaContinente:hover {
+    transform: scale(150%);
  }
 
  .tituloContinente {
-   font-size: 40px;
-   color: #ffffff;
-   font-weight: bold;
-   background-color: #001a41;
-   padding: 5px 40px;
-   border-radius: 15px;
-   margin: 0%;
-   margin-bottom: 20px;
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #001a41;
+    padding: 5px 40px;
+    border-radius: 15px;
+    margin: 0%;
+    margin-bottom: 20px;
  }
 
  .textoTitulo {
-   margin: 0%;
-   color: #ffffff;
+    margin: 0%;
+    color: #ffffff;
  }
 
  .descripcionContinente {
@@ -44,16 +49,16 @@
     justify-content: space-between;
  }
 
-.tituloRegion {
-   font-size: 20px;
-   color: #001a41;
-   font-weight: bold;
-   padding: 20px 20px;
-   text-align: center;
-}
+ .tituloRegion {
+    font-size: 20px;
+    color: #001a41;
+    font-weight: bold;
+    padding: 20px 20px;
+    text-align: center;
+ }
 
  .tarjetaRegion {
-   width: 500px;
+    width: 500px;
     border-radius: 15px;
     background-color: #f1f1f1;
     margin: 5px;
@@ -77,7 +82,7 @@
     background-color: #ffffff;
     display: block;
     justify-items: center;
-   margin-top: 40px;
+    margin-top: 40px;
  }
 
  .tituloInformacion {
@@ -103,7 +108,7 @@
  }
 
  .tituloEnergia {
-   width: 80%;
+    width: 80%;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
@@ -116,9 +121,9 @@
  }
 
  .parrafoEnergia {
-   text-align: justify;
-   padding: 10px;
-   font-size: 14px;
-   color: #001a41;
-   background-color: #f1f1f1;
-}
+    text-align: justify;
+    padding: 10px;
+    font-size: 14px;
+    color: #001a41;
+    background-color: #f1f1f1;
+ }
