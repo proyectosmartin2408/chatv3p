@@ -11,6 +11,11 @@
     padding: 10px 40px;
  }
 
+ .mapaContinente {
+   width: 200px;
+   height: 200px;
+ }
+
  .tituloContinente {
    font-size: 40px;
    color: #ffffff;
