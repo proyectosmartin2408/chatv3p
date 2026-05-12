@@ -6,6 +6,9 @@
 <main class="home">
   <!-- HERO -->
   <section class="seccionTitulo">
+    <div class="mapaContinente">
+      <img src="{{ url_for('static', filename='img/mapamundi2.jpg') }}">
+    </div>
     <div class="areaTitulo">
       <p class="textoTituloinicio">Los Países y su Transición Energética</p>
       <p class="textoSubtitulo">Un vistazo al estado actual</p>
@@ -31,7 +34,9 @@
 
 
       <!-- CARRUSEL DE IMAGENES -->
-      <p class="textoSubtitulo"> << Indicadores Mundiales >></Indicadores></p>
+      <p class="textoSubtitulo">
+        << Indicadores Mundiales>></Indicadores>
+      </p>
       <div class="areaGraficos">
         <div id="carouselExample" class="carousel slide carrusel">
           <div class="carousel-inner">
@@ -64,7 +69,7 @@
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next"  type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -80,7 +85,7 @@
       <a class="enlace" href="/america">
         <div class="card">
           <img src="{{ url_for('static', filename='img/america.jpg') }}">
-          <h3 class="textoContinente" >América</h3>
+          <h3 class="textoContinente">América</h3>
           <p class="parrafoContinente">
             América es el segundo continente más grande del mundo, con una extensión aproximada de 42,5 millones de km²
             y compuesto por 35 países soberanos. Se caracteriza por su gran desarrollo latitudinal, extendiéndose desde
